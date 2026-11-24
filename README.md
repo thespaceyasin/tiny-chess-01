@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/thespaceyasin/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/thespaceyasin/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A chess engine in at most 4,096 bytes of Python: 0x88 board, alpha-beta search with quiescence, transposition table, killer moves and piece-square evaluation, searching to a fixed node budget (150,000 nodes a move) so every trial replays identically. It plays the house gauntlet through the env at `$MAKEFUN_ENV_URL`.
+A chess engine in at most 4,096 bytes of Python: 0x88 board with piece bitboards, PeSTO tapered MG/EG piece-square tables, pawn-hash evaluation (passed, doubled and isolated pawns), open/semi-open file rooks, king pawn shield, bishop pair, and PVS/LMR/NMP/aspiration-window search with TTM-first lazy move generation, killer moves, piece-to history and check-safe quiescence, searching to a fixed node budget (120,000 nodes a move) so every trial replays identically. It plays the house gauntlet through the env at `$MAKEFUN_ENV_URL`.
 
 ## Run it
 
